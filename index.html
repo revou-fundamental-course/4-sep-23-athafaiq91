@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Penghitung Matematik Persegi</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>PETIK</h1>
+            <h3><sub>Penghitung Matematik</sub></h3>
+        </header>
+        <div class="container">
+            <section>
+                <h2>Halo, Selamat Datang di Petik</h2>
+                <p>Petik adalah sebuah web apps sederhana yang berfungsi menghitung nilai luas dan keliling pada persegi </p>
+            </section>
+            <div class="konten">
+                <h1 class="heading-isi">Luas dan Keliling Persegi</h1>
+                <img src="persegi.jpg" alt="Persegi ABCD">
+                <ul>
+                    <li>Rumus Luas Persegi yaitu:</li>
+                    <h4>L = S × S</h4>
+                    <p>Diketahui:</p>
+                    <p>L = Luas</p>
+                    <p>S = Sisi</p>
+                </ul>
+                <br>
+                <ul>
+                    <li>Rumus Keliling Persegi yaitu:</li>
+                    <h4>K = 4 × S</h4>
+                    <p>Diketahui:</p>
+                    <p>K = Keliling</p>
+                    <p>S = Sisi</p>
+                </ul>
+                <br>
+                <hr>
+                <div id="kalkulator">
+                    <h2>Hitung Luas atau Keliling Persegi</h2>
+                    <br>
+                    <label for="sisi">Masukkan nilai sisi yang anda inginkan:</label>
+                    <input type="number" id="sisi" name="sisi" placeholder="Nilai Sisi">
+                    <div class="button-container">
+                        <button onclick="hitungLuas()" class="button-luas">Hitung Luas</button>
+                        <button onclick="hitungKeliling()" class="button-keliling">Hitung Keliling</button>
+                    </div>
+                    <div class="luas-persegi">
+                        <div id="luasPertama"></div>
+                        <div id="luasKedua"></div>
+                        <div id="hasilLuas"></div>
+                    </div>
+                    <div class="keliling-persegi">
+                        <div id="kelilingPertama"></div>
+                        <div id="kelilingKedua"></div>
+                        <div id="hasilKeliling"></div>
+                    </div>
+                    <button onclick="resetForm()" class="resetButton">Reset</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h1> 🫰🏼 TERIMA KASIH SUDAH MENGUNJUNGI WEB SEDERHANA INI 🫰🏼</h1>
+        </footer>
+    </body>
+</html>
